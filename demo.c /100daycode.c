@@ -1,20 +1,32 @@
-//Q4: Write a program to calculate the area and circumference of a circle given its radius.
 
+//Q5: Write a program to convert temperature from Celsius to Fahrenheit.
+
+/*
+Sample Test Cases:
+Input 1:
+0
+Output 1:
+Fahrenheit=32
+
+Input 2:
+100
+Output 2:
+Fahrenheit=212
+
+*/
 #include <stdio.h>
-#include <math.h>
 
 int main() {
-    float radius, area, circumference;
+    float celsius, fahrenheit;
 
-    // Input radius
-    scanf("%f", &radius);
+    // Input temperature in Celsius
+    scanf("%f", &celsius);
 
-    // Calculate area and circumference
-    area = M_PI * radius * radius;
-    circumference = 2 * M_PI * radius;
+    // Convert Celsius to Fahrenheit
+    fahrenheit = (celsius * 9 / 5) + 32;
 
-    // Print results
-    printf("Area=%.2f, Circumference=%.2f\n", area, circumference);
+    // Print result
+    printf("Fahrenheit=%.0f\n", fahrenheit);
 
     return 0;
 }
