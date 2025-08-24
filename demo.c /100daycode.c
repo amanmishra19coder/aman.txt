@@ -1,13 +1,17 @@
-#include<stdio.h>
-int main(){
-int a , b ;
-a = 5;
-b = 10;
-printf("enter your number ");
-scanf("%d%d", &a, &b);
-printf("sum is  : %d\n", a + b);
-printf(" difference is  : %d\n", a - b);
-printf("product is  : %d\n", a * b);
-printf("quotient is  : %d\n", a / b);
-return 0;
+#include <stdio.h>
+
+int main() {
+    int length, breadth, area, perimeter;
+
+    // Input length and breadth
+    scanf("%d %d", &length, &breadth);
+
+    // Calculate area and perimeter
+    area = length * breadth;
+    perimeter = 2 * (length + breadth);
+
+    // Print results
+    printf("Area=%d, Perimeter=%d\n", area, perimeter);
+
+    return 0;
 }
