@@ -1,32 +1,17 @@
 
-//Q5: Write a program to convert temperature from Celsius to Fahrenheit.
-
-/*
-Sample Test Cases:
-Input 1:
-0
-Output 1:
-Fahrenheit=32
-
-Input 2:
-100
-Output 2:
-Fahrenheit=212
-
-*/
 #include <stdio.h>
 
 int main() {
-    float celsius, fahrenheit;
+    int n, sum;
 
-    // Input temperature in Celsius
-    scanf("%f", &celsius);
+    // Input n
+    scanf("%d", &n);
 
-    // Convert Celsius to Fahrenheit
-    fahrenheit = (celsius * 9 / 5) + 32;
+    // Formula for sum of first n natural numbers
+    sum = n * (n + 1) / 2;
 
     // Print result
-    printf("Fahrenheit=%.0f\n", fahrenheit);
+    printf("Sum=%d\n", sum);
 
     return 0;
 }
